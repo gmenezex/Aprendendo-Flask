@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo do uso do template</title>
+</head>
+<body>
+  <h1>Olá, mundo com template</h1>
+  <h2>Olá, {{dados.nome}} {{dados.sobrenome}} | {{dados.idade}} </h2>
+  <p>Testando o render_template do Flask</p>
+  <p>Olá {{nome|default('sem nome')}}</p>
+
+  <h3>Exemplo de imagem:</h3>
+  <img src="{{url_for('static', filename='cachorro.jpg')}}" alt="">
+</body>
+</html>
