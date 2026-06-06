@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verifica par e impar</title>
+</head>
+<body>
+  <form action="" method="POST">
+    Numeros: <input type="text" name="numerosForm"><br>
+    <input type="submit" value="Enviar">
+  </form>
+  {% if lista_numeros %}
+    <h3>Pares</h3>
+    <ul>
+    {% for par in pares %}
+      <li>{{par}}</li>
+    {% endfor %}
+    </ul>
+    <hr>
+        <h3>Impares</h3>
+    <ul>
+    {% for impar in impares %}
+      <li>{{impar}}</li>
+    {% endfor %}
+    </ul>
+        <hr>
+        <h3>Todos números</h3>
+    <ul>
+    {% for numero in lista_numeros %}
+      <li>{{numero}}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+</body>
+</html>
