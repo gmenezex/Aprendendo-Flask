@@ -98,3 +98,8 @@ E a página que for utilizar por exemplo o Header, tem que usar o extends, exemp
   <h1>Bem-Vindo</h1>
 {% endblock %}
 )
+---------------------------------------------
+Banco de dados SQLAlchemy
+Vamos rodar primeiro o "pip install flask-sqlalchemy". Ele é uma ORM.
+Depois de rodar, é preciso importar:
+from flask_sqlalchemy import SQLAlchemy
