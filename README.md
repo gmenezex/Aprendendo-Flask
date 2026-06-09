@@ -103,3 +103,13 @@ Banco de dados SQLAlchemy
 Vamos rodar primeiro o "pip install flask-sqlalchemy". Ele é uma ORM.
 Depois de rodar, é preciso importar:
 from flask_sqlalchemy import SQLAlchemy
+
+----------------------------------------------
+Sistema de login !
+Temos que instalar a biblioteca do Flask login
+pip install flask-login
+depois importar 
+from flask_login import LoginManager
+
+Biblioteca para criptografar senhas
+import hashlib
