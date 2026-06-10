@@ -113,3 +113,20 @@ from flask_login import LoginManager
 
 Biblioteca para criptografar senhas
 import hashlib
+
+----------------------------------------------
+Blueprints: Nos ajudam a moduralizar as nossas rotas, templates e formularios..
+Se cria uma pasta chamada blueprints e dentro dela a pasta que vai ficar nossos arquivos por exemplo menssagens. Dentro dela criei o arquivo menssagens.py e importei:
+from flask import Blueprint
+
+Dentro do arquivo main_blue.py ou principal, fazer a importação do arquivo e depois o seu registro, como nos codigos abaixo:
+
+from blueprints.mensagens.mensagens import menssagens_bp
+
+app.register_blueprint(menssagens_bp)
+
+Para adicionar o template, criamos dentro da pasta blueprints/menssagens a pasta templates e informamos para dentro da instancia o template_folder
+menssagens_bp = Blueprint('menssagens', __name__, template_folder='templates').
+
+Como incluir arquivos staticos dentro dos blueprints?
+Criamos a pasta chamada static dentro de blueprints/menssagens
